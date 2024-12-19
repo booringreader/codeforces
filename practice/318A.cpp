@@ -14,15 +14,10 @@ int main(){
         mid=(n/2)+1;
     }
 
-    ll arr[n];
-    arr[0]=1;
-    for(ll i=1; i<mid; i++){
-        arr[i]=arr[i-1]+2;
+    if(k<=mid){
+        cout<<1+2*(k-1);
+    }else{
+        cout<<2+2*(k-mid-1);
     }
-    arr[mid]=2;
-    for(ll j=mid+1; j<n; j++){
-        arr[j] = arr[j-1]+2;
-    }
-    cout<<arr[k-1];
 }
 
